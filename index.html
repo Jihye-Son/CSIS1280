@@ -1,176 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
-    <title>Project2 By Jihye Son</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP" rel="stylesheet">
-</head>
-<body>
-    <header class="header-container">
-        <h1 id="heading">JIHYE SON</h1>
-    <nav class="nav-container">
+  <meta charset="utf-8">
+  <title>Jihye Son's Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <body>
+
+    <div class="main-nav">
         <ul class="nav">
-            <li><a href="#heading">HOME</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#skill">SKILL</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+          <li class="name">Jihye Son</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-    <div class="profile">
-        <img id="profile-img" src="images/responsive-layout-profile.png" alt="profile-image">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
     </div>
+
+    <header>
+      <img src="images/myprofile.jpg" alt="my selfie" class="profile-image">
+      <h1 class="tag name">Hello, I’m Jihye Son.</h1>
+      <p class="tag location">My home is Republic of Korea, Seoul.</p>
     </header>
-    <section>
-    <p id="portfolio">PORTFOLIO</p>
-        <div class="img-container">
-        <img class="images" id="img1" src="images/portfolio-1.png" alt="image1">
-        <h3>Marketing Page</h3>
-        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>  
-        </div>      
-        <div class="img-container">
-        <img class="images" id="img2" src="images/portfolio-2.png" alt="image2">
-        <h3>Search Page</h3>
-        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-        </div>
-        <div class="img-container">
-            <img class="images" id="img3"  src="images/portfolio-3.png" alt="image3">
-            <h3>Travel App</h3>
-            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-        </div>
-        <div class="img-container">
-            <img class="images" id="img4" src="images/portfolio-4.png" alt="image4">
-            <h3>Map of Favorite Spots</h3>
-            <p>This project uses mapping apps to plot points for my favorite sopts in the city for a do-it-yourself walking tour.</p>
-        </div>
-        <div class="img-container">
-            <img class="images" id="img5" src="images/portfolio-5.png" alt="image5">
-            <h3>Photo Gallery</h3>
-            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>        
-        </div>
-        <div class="img-container">
-            <img class="images" id="img6" src="images/portfolio-6.png" alt="image6">
-            <h3>Calculator</h3>
-            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>    
-        </div> 
-    </section>
-    <section>
-    <p id="skill">SKILL</p>
-        <div class="img-container">
-            <img class="images" id="img7" src="images/project1.jpeg" alt="image7">
-            <h3 id="project"><a href="Project1/index.html">My project1</a></h3>
-            <p>This project shows my profile and skills.</p>
-        </div>  
-        <div class="img-container">
-            <img class="images" id="img8" src="images/newspaper.jpeg" alt="image8" >
-            <h3>Newspaper</h3>
-            <p>This project is to create a newspaper.</p>
-        </div>  
-    </section>     
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-    </div>
-    <footer>      
-        <h4>CONTACT</h4>
-        <p id="contact-txt">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <p id="contact">Phone &nbsp;&nbsp; <a href="tel:+11115551234">+1 (111) 555-1234</a></p>
-        <p id="contact">Email &nbsp;&nbsp; <a href="mailto:email@yoursite.com"> email@yoursite.com</a></p>
-        <hr>
-        <div class="footer-below">
-        <h4 id="footername">JIHYE SON</h4>
-        <h4 id="top"><a href="#heading">BACK TO TOP</a></h4>
-        <nav class="nav-container">
-            <ul>
-                <li><a href="#heading">HOME</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#skill">SKILL</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-        </div>
+
+    <main class="flex">
+      <div class="card">
+        <h2>Background</h2>
+        <p>I studied in Digital media convergence management in Korea, so I am very interested in the IT field. </p>
+        <img src="images/Korea_flag.jpg" alt="Korean flag" class="background-image">
+        <p>I'm majoring in Data analytics in Computer and information systems at Douglas College in Canada.</p>
+        <img src="images/Canada_flag.jpg" alt="Canadian flag" class="background-image">
+        <img src="images/douglascollege.jpg" alt="douglascollege logo" class="background-image">
+      </div> 
+
+      <div class="card">
+        <h2>Goals</h2>
+        <p>I would like to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+        <ul class="skills">
+          <li>HTML/CSS</li>
+          <li>Busienss statistic</li>
+          <li>JavaScript</li>
+          <li>Data Analytics</li>
+          <li>Python</li>
+        </ul>
+        <p>I will be learning business statistic and support systems, data analysis and more about Computer and Information Systems. In my first year at Douglas College, I will be introduced to basic computing and programming, and become familiar with current development tools. In my second year, I will hone my skills, specializing in Data Analytics. I will become having the skills to work in a variety of career opportunities in the growing information technology industry.</p>
+      </div> 
+
+      <div class="card">
+        <h2>Hobbies</h2>
+        <img src="images/netflix.png" alt="netflix logo" class="netflix-image">
+        <img src="images/tennis.png" alt="tennis icon" class="tennis-image">
+        <img src="images/language.png" alt="language icon" class="language-image">
+        <ul>
+        <li>Watching Netflix</li>
+        <li>Playing Tennis</li>
+        <li>Learning Languages</li>
+        </ul>
+      </div> 
+    </main>
+    <footer>
+      <ul>
+        <li><a href="https://github.com/Jihye-Son" class="social github">Github</a></li>
+      </ul>
+      <p class="copyright">Copyright 2021, Jihye Son</p>
     </footer>
-
-    
-    <script>
-        var modal = document.getElementById('myModal');    
-        var img = document.getElementById('img1');
-        var modalImg = document.getElementById("img01");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-
-        var modal = document.getElementById('myModal');
-        var img = document.getElementById('img2');
-        var modalImg = document.getElementById("img01");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-        
-        var modal = document.getElementById('myModal');
-        var img = document.getElementById('img3');
-        var modalImg = document.getElementById("img01");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-
-        var modal = document.getElementById('myModal');
-        var img = document.getElementById('img4');
-        var modalImg = document.getElementById("img01");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-      
-        var modal = document.getElementById('myModal');
-        var img = document.getElementById('img5');
-        var modalImg = document.getElementById("img01");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-
-        var modal = document.getElementById('myModal');
-        var img = document.getElementById('img6');
-        var modalImg = document.getElementById("img01");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-
-        var modal = document.getElementById('myModal');
-        var img = document.getElementById('img7');
-        var modalImg = document.getElementById("img01");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-
-        var modal = document.getElementById('myModal');
-        var img = document.getElementById('img8');
-        var modalImg = document.getElementById("img01");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-
-        var span = document.getElementsByClassName("close")[0];
-        span.onclick = function () {
-            modal.style.display = "none";
-            
-        }
-
-        window.onclick = function(event) {
-        if (event.target == modal) {
-        modal.style.display = "none";
-        }
-}
-    </script>
-</body>
-</html>
+  </body>
+  </html>
